@@ -16,7 +16,7 @@
         </ul>
         <ul class="navbar-nav navbar-right">
           <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-user-plus"></i> Regisztráció</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Belépés</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Belépés</a></li>
         </ul>
         <!--<form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
