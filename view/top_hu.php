@@ -1,5 +1,8 @@
-<?php require_once ('./resources/string_resources.php');?>
   <!DOCTYPE html>
+  <?php require_once ('./resources/string_resources.php');
+  require_once('./common/import.php');
+  importFolder($string_view_modals_route);
+  ?>
   <html lang="hu">
   <head>
      <meta charset="UTF-8">
@@ -12,6 +15,7 @@
      <title><?php echo($string_meta_title_hu); ?></title>
      <script src="<?php echo($string_jquery_route); ?>"></script>
      <script src="<?php echo($string_bootstrap_js_route); ?>"></script>
+     <script src="<?php echo($string_controller_route."main_menu.js"); ?>"></script>
      <link rel="stylesheet" href="<?php echo($string_fontawesome_css_route); ?>">
   </head>
   <body>
