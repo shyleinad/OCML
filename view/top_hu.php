@@ -12,6 +12,7 @@
      <title><?php echo($string_meta_title_hu); ?></title>
      <script src="<?php echo($string_jquery_route); ?>"></script>
      <script src="<?php echo($string_bootstrap_js_route); ?>"></script>
+     <script src="<?php echo($string_resources_stringresourcesjs_route); ?>"></script>
      <script src="<?php echo($string_controller_route."main_menu.js"); ?>"></script>
      <link rel="stylesheet" href="<?php echo($string_fontawesome_css_route); ?>">
   </head>

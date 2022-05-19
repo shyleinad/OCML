@@ -27,4 +27,5 @@
  $string_controller_route="./controller/";
  $string_controller_modals_route="./controller/modals/";
  $string_view_modals_route="./view/modals/";
+ $string_resources_stringresourcesjs_route="./resources/string_resources.js";
  ?>
