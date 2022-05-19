@@ -1,8 +1,5 @@
+<?php require_once ('./resources/string_resources.php'); ?>
   <!DOCTYPE html>
-  <?php require_once ('./resources/string_resources.php');
-  require_once('./common/import.php');
-  importFolder($string_view_modals_route);
-  ?>
   <html lang="hu">
   <head>
      <meta charset="UTF-8">
