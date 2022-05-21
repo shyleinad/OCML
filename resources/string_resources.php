@@ -23,9 +23,13 @@
  $string_bootstrap_js_route="./dependencies/bootstrap-5.1.3-dist/js/bootstrap.min.js";
  $string_jquery_route="./dependencies/jquery-3.6.0.min.js";
  $string_menu_route="./view/menu.php";
- $string_fontawesome_css_route="dependencies/fontawesome-free-6.1.1-web/css/fontawesome.min.css";
+ $string_fontawesome_css_route="./dependencies/fontawesome-free-6.1.1-web/css/fontawesome.min.css";
  $string_controller_route="./controller/";
  $string_controller_modals_route="./controller/modals/";
  $string_view_modals_route="./view/modals/";
  $string_resources_stringresourcesjs_route="./resources/string_resources.js";
+ $string_common_tokengen_route="./common/tokengen.php";
+ $string_view_top_hu_route="./view/top_hu.php";
+ $string_view_mid_route="./view/mid.php";
+ $string_view_bottom_route="./view/bottom.php";
  ?>

@@ -1,9 +1,11 @@
 <?php
   session_start();
-  require_once('./common/tokengen.php');
+  require_once('./resources/string_resources.php');
+  require_once($string_common_tokengen_route);
   generateToken();
-  require_once('common/language.php');
-  require_once(classLanguage::stringSetHtmlTop());
-  require_once('./view/mid.php');
-  require_once('./view/bottom.php');
+  //require_once('common/language.php');
+  //require_once(classLanguage::stringSetHtmlTop());
+  require_once($string_view_top_hu_route);
+  require_once($string_view_mid_route);
+  require_once($string_view_bottom_route);
 ?>
