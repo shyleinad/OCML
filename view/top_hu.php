@@ -3,6 +3,7 @@
   <html lang="hu">
   <head>
      <meta charset="UTF-8">
+     <meta name="session_token" content="<?php echo $_SESSION["session_token"]; ?>">
      <meta name="keywords" content="<?php echo($string_meta_keywords_hu); ?>">
      <meta name="description" content="<?php echo($string_meta_description_hu); ?>">
      <meta name="author" content="<?php echo($string_meta_author); ?>">
