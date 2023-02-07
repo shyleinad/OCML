@@ -7,4 +7,7 @@ $string_fontawesome_css_route="dependencies/fontawesome-free-6.1.1-web/css/fonta
 $string_controller_route="./controller/";
 $string_controller_modals_route="./controller/modals/";
 $string_view_modals_route="./view/modals/";*/
+//models
 var string_model_user_route="./model/user.php";
+//controllers
+var string_controller_user="./controller/user.php";
