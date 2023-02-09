@@ -18,7 +18,9 @@
  $string_meta_description_hu="Ingyenes online gépjármű szervizkönyv";
  $string_meta_title_hu="Online gépjármű szevizkönyv";
 
- //elérési utak
+ //routes
+ //db config
+ $string_db_config_route="./db_config/connect.php";
  //dependencies
  $string_bootstrap_css_route="./dependencies/bootstrap-5.1.3-dist/css/bootstrap.min.css";
  $string_bootstrap_js_route="./dependencies/bootstrap-5.1.3-dist/js/bootstrap.min.js";
@@ -39,7 +41,7 @@
  //common
  $string_common_tokengen_route="./common/tokengen.php";
 
- //db_configok
+ //db_configs
  $string_servername="localhost";
  $string_usrname="root";
  $string_password="";

@@ -2,7 +2,7 @@
   try{
     session_start();
     require_once('./resources/string_resources.php');
-    require_once('./db_config/connect.php');
+    require_once($string_db_config_route);
     require_once($string_common_tokengen_route);
     generateToken();
     //require_once('common/language.php');
@@ -12,6 +12,6 @@
     require_once($string_view_bottom_route);
   }
   catch(Exception $e){
-    echo($e); //később átírni logolásra
+    echo($e); //LATER: rewrite to log instead of echo
   }
 ?>

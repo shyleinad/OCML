@@ -1,3 +1,8 @@
 <?php
-  //Userrel kapcsolatos crudok
+  class User{
+
+    public function __construct(){
+
+    }
+  }
 ?>
