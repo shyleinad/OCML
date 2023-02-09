@@ -38,4 +38,9 @@
  $string_resources_stringresourcesjs_route="./resources/string_resources.js";
  //common
  $string_common_tokengen_route="./common/tokengen.php";
+
+ //db_configok
+ $string_servername="localhost";
+ $string_usrname="root";
+ $string_password="";
  ?>
