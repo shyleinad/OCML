@@ -41,8 +41,10 @@
  //common
  $string_common_tokengen_route="./common/tokengen.php";
 
- //db_configs
- $string_servername="localhost";
- $string_usrname="root";
- $string_password="";
+ //db_configs (modify later)
+ $string_db_server_name="localhost";
+ $string_db_usrname="root";
+ $string_db_password="";
+ $string_db_name="OCML";
+ $string_db_server_port="3306";
  ?>
