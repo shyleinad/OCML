@@ -1,4 +1,4 @@
-<?php require_once ('./resources/string_resources.php'); ?>
+<?php /*require_once ('./resources/string_resources.php');*/ //redundant ?>
   <!DOCTYPE html>
   <html lang="hu">
   <head>
