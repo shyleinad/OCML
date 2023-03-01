@@ -12,6 +12,6 @@
     require_once($string_view_bottom_route);
   }
   catch(Exception $e){
-    echo($e); //LATER: rewrite to log instead of echo
+    echo($e); //TODO: LATER rewrite to log instead of echo
   }
 ?>
