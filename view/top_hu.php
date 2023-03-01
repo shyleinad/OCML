@@ -14,6 +14,7 @@
      <script src="<?php echo($string_bootstrap_js_route); ?>"></script>
      <script src="<?php echo($string_resources_stringresourcesjs_route); ?>"></script>
      <script src="<?php echo($string_controller_route."main_menu.js"); ?>"></script>
+     <script src="<?php echo($string_common_validatejs_route); ?>"></script>
      <link rel="stylesheet" href="<?php echo($string_fontawesome_css_route); ?>">
   </head>
   <body>

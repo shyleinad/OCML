@@ -40,6 +40,7 @@
  $string_resources_stringresourcesjs_route="./resources/string_resources.js";
  //common
  $string_common_tokengen_route="./common/tokengen.php";
+ $string_common_validatejs_route="./common/validate.js";
 
  //db_configs (modify later)
  $string_db_server_name="localhost";
