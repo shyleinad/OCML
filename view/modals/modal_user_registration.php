@@ -17,10 +17,10 @@
             <label for="input_user_reg_name" class="form-label">Teljes név</label>
             <input type="text" class="form-control" id="input_user_reg_name" required>
           </div>
-          <div class="mb-3">
+          <!--<div class="mb-3">
             <label for="input_user_reg_borndate" class="form-label">Születési idő</label>
             <input type="date" class="form-control" id="input_user_reg_borndate" min="1920-01-01" max="<?php echo(date("Y-m-d")); ?>" required>
-          </div>
+          </div>--> <!--taken out-->
           <div class="mb-3">
             <label for="input_user_reg_pswd" class="form-label">Jelszó</label>
             <input type="password" class="form-control" id="input_user_reg_pswd" required>

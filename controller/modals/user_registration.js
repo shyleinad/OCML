@@ -5,13 +5,16 @@ $(document).ready(function(){
     //console.log(session_token);
     let user_reg_email = document.getElementById("input_user_reg_email").value;
     let user_reg_name = document.getElementById("input_user_reg_name").value;
-    let user_reg_borndate = document.getElementById("input_user_reg_borndate").value;
+    //let user_reg_borndate = document.getElementById("input_user_reg_borndate").value; //taken out
     let user_reg_pswd = document.getElementById("input_user_reg_pswd").value;
-    //console.log(typeof(email)+" "+typeof(name)+" "+typeof(borndate)+" "+typeof(pswd));
+    let user_reg_pswd_confirm = document.getElementById("input_user_reg_pswd_confirm").value;
+    console.log(user_reg_email+" "+user_reg_name+" "+user_reg_pswd+" "+user_reg_pswd_confirm);
+    /*if (validateReg(user_reg_email, user_reg_name, user_reg_pswd, user_reg_pswd_confirm)){
+
+    }*/
     $.ajax({
       url:string_controller_user,
-      data:{command: 'addUser', user_reg_email: user_reg_email, user_reg_name: user_reg_name,
-        user_reg_borndate: user_reg_borndate, user_reg_pswd: user_reg_pswd},
+      data:{command: 'addUser', user_reg_email: user_reg_email, user_reg_name: user_reg_name, user_reg_pswd: user_reg_pswd},
       type:'post',
       headers:{
         'session_token': session_token},

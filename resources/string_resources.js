@@ -11,3 +11,14 @@ $string_view_modals_route="./view/modals/";*/
 var string_model_user_route="./model/user.php";
 //controllers
 var string_controller_user="./controller/user.php";
+//html input ids
+///reg
+var string_input_user_reg_email="input_user_reg_email";
+var string_input_user_reg_name="input_user_reg_name";
+var string_input_user_reg_borndate="input_user_reg_borndate";
+var string_input_user_reg_pswd="input_user_reg_pswd";
+var string_input_user_reg_pswdconfirm="input_user_reg_pswd_confirm";
+//regexes
+var email_regex="^((([a-z0-9\-(_)(.)])+)(@)(([a-z0-9(_)\-]+\.)+)([a-z]{2,4}))|(\-)$";
+var name_regex="^(([AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ][aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz]+((\-)|(\ ))?)+)(\ [AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ][aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz]+)$";
+var pswd_regex="^(?=.*?[AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ])(?=.*?[aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz])(?=.*?[0-9])(?=.*?[§\'\"\+\!\%\/\=\(\)\~\ˇ\^\˘\°\˛\`\˙\´\˝\¨\¸\\\|\€\÷\×\[\]\$\¤\<\>\#\&\@\{\}\;\>\*\,\.\-]).{8,100}$";
