@@ -2,16 +2,15 @@ $(document).ready(function(){
   //Küldés klikk
   $("#button_user_reg_send").click(function(){
     let session_token = $('meta[name="session_token"]').attr('content');
-    //console.log(session_token);
+    //console.log(session_token); //debug
     let user_reg_email = document.getElementById("input_user_reg_email").value;
     let user_reg_name = document.getElementById("input_user_reg_name").value;
-    //let user_reg_borndate = document.getElementById("input_user_reg_borndate").value; //taken out
     let user_reg_pswd = document.getElementById("input_user_reg_pswd").value;
     let user_reg_pswd_confirm = document.getElementById("input_user_reg_pswd_confirm").value;
-    //console.log(user_reg_email+" "+user_reg_name+" "+user_reg_pswd+" "+user_reg_pswd_confirm);
-    if (validateReg(user_reg_email, user_reg_name, user_reg_pswd, user_reg_pswd_confirm)){
-      console.log("nem jóóó");
-      return; //TODO: some was of letting the user know that the input is not correct
+    //validation, if not correct
+    if (!validateReg(user_reg_email, user_reg_name, user_reg_pswd, user_reg_pswd_confirm)){
+      //TODO: some way of letting the user know that the input is not correct
+      return;
     }
     $.ajax({
       url:string_controller_user,
@@ -28,6 +27,5 @@ $(document).ready(function(){
         //console.log("Reg nem lett elküldve");
       }
     });
-    //console.log("reg klikk");
   });
 });
