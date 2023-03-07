@@ -11,11 +11,12 @@
           <div class="mb-3">
             <label for="input_user_reg_email" class="form-label">Email cím</label>
             <input type="email" class="form-control" id="input_user_reg_email" required>
-            <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+            <small class="form-text text-muted">(Pl. pelda@domain.hu)</small>
           </div>
           <div class="mb-3">
             <label for="input_user_reg_name" class="form-label">Teljes név</label>
             <input type="text" class="form-control" id="input_user_reg_name" required>
+            <small class="form-text text-muted">(Pl. Példa Géza, Példa-Nagy Géza, Példa Géza Béla)</small>
           </div>
           <!--<div class="mb-3">
             <label for="input_user_reg_borndate" class="form-label">Születési idő</label>
@@ -24,10 +25,12 @@
           <div class="mb-3">
             <label for="input_user_reg_pswd" class="form-label">Jelszó</label>
             <input type="password" class="form-control" id="input_user_reg_pswd" required>
+            <small class="form-text text-muted">(Min. 8 karakter hosszúságúnak kell lennie és tartalmaznia kell kisbetűt, nagybetűt, számot és speciális karaktert.)</small>
           </div>
           <div class="mb-3">
             <label for="input_user_reg_pswd_confirm" class="form-label">Jelszó megerősítése</label>
             <input type="password" class="form-control" id="input_user_reg_pswd_confirm" required>
+            <small class="form-text text-muted">(Meg kell egyeznie a fentebb megadott jelszóval.)</small>
           </div>
         </form>
       </div>
