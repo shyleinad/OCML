@@ -40,12 +40,17 @@ function validatePswdConfirm(user_reg_pswd, user_reg_pswd_confirm, input_id) {
 }
 //validate the whole registration
 function validateReg(user_reg_email, user_reg_name, user_reg_pswd, user_reg_pswd_confirm) {
+  //we need to trigger all the functions so EVERY textbox that has bad inputs will turn red
+  //triggering them in an if with && operator might not turn all the "bad" input textboxes red
+  let isEmailValid=validateEmail(user_reg_email, string_input_user_reg_email);
+  let isNameValid=validateName(user_reg_name, string_input_user_reg_name);
+  let isPswdValid=validatePswd(user_reg_pswd, string_input_user_reg_pswd);
+  let isPswdConfirm=validatePswdConfirm(user_reg_pswd, user_reg_pswd_confirm, string_input_user_reg_pswdconfirm);
   //if they all return true, they all match the regex
-  //this way, not all of the funtions will trigger
-  if ((validateEmail(user_reg_email, string_input_user_reg_email)) &&
-    (validateName(user_reg_name, string_input_user_reg_name)) &&
-    (validatePswd(user_reg_pswd, string_input_user_reg_pswd)) &&
-    (validatePswdConfirm(user_reg_pswd, user_reg_pswd_confirm, string_input_user_reg_pswdconfirm))) {
+  if ((isEmailValid) &&
+    (isNameValid) &&
+    (isPswdValid) &&
+    (isPswdConfirm)) {
     return true;
   }
   return false;

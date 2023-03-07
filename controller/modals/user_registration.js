@@ -20,7 +20,7 @@ $(document).ready(function(){
         'session_token': session_token},
       success: function(){
         //console.log("Reg elküldve: "+string_controller_user);
-        //alert("A regisztráció elküldve!");
+        //alert("Sikeres regsiztráció!");
       },
       error: function(){
         alert("A regisztráció sikertelen!");
