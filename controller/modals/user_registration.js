@@ -14,17 +14,15 @@ $(document).ready(function(){
     }
     $.ajax({
       url:string_controller_user,
-      data:{command: 'addUser', user_reg_email: user_reg_email, user_reg_name: user_reg_name, user_reg_pswd: user_reg_pswd},
+      data:{command: 'addUser', user_reg_email: user_reg_email, user_reg_name: user_reg_name, user_reg_pswd: user_reg_pswd, user_reg_pswd_confirm: user_reg_pswd_confirm},
       type:'post',
       headers:{
         'session_token': session_token},
-      success: function(){
-        //console.log("Reg elküldve: "+string_controller_user);
+      success: function(response){
         //alert("Sikeres regsiztráció!");
       },
       error: function(){
         alert("A regisztráció sikertelen!");
-        //console.log("Reg nem lett elküldve");
       }
     });
   });

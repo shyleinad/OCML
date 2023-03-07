@@ -41,6 +41,7 @@
  //common
  $string_common_tokengen_route="./common/tokengen.php";
  $string_common_validatejs_route="./common/validate.js";
+ $string_common_validatephp_route="./common/validate.php";
 
  //db_configs (modify later)
  $string_db_server_name="localhost";
@@ -48,4 +49,9 @@
  $string_db_password="";
  $string_db_name="OCML";
  $string_db_server_port="3306";
+
+ //regexes
+ $email_regex="/^((([a-z0-9\-(_)(.)])+)(@)(([a-z0-9(_)\-]+\.)+)([a-z]{2,4}))|(\-)$/";
+ $name_regex="/^(([AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ][aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz]+((\-)|(\ ))?)+)(\ [AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ][aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz]+)$/";
+ $pswd_regex="/^(?=.*?[AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ])(?=.*?[aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz])(?=.*?[0-9])(?=.*?[§\'\"\+\!\%\/\=\(\)\~\ˇ\^\˘\°\˛\`\˙\´\˝\¨\¸\\\|\€\÷\×\[\]\$\¤\<\>\#\&\@\{\}\;\>\*\,\.\-]).{8,100}$/";
  ?>
