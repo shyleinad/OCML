@@ -1,18 +1,21 @@
 <?php
   require_once('../resources/string_resources.php');
   function validateEmail($user_reg_email){
+    global $email_regex; //can't reach vars outside function without global keyword
     if (preg_match($email_regex, $user_reg_email)){
       return true;
     }
     return false;
   }
   function validateName($user_reg_name){
+    global $name_regex;
     if(preg_match($name_regex, $user_reg_name)){
       return true;
     }
     return false;
   }
   function validatePswd($user_reg_pswd){
+    global $pswd_regex;
     if(preg_match($pswd_regex, $user_reg_pswd)){
       return true;
     }
